@@ -1,0 +1,411 @@
+body{
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  background-image:url("images/background.jpg");
+  font-family:Arial;
+
+}
+.search-box{
+  position: absolute;
+  top: 10%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  max-width: 550px;
+  width: 30%;
+  border-radius: 5px;
+  padding: 15px;
+  display:flex;
+  justify-content: space-between;
+}
+.search-btn{
+  background: #ffec00;
+  width: 10%;
+  border-radius:5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.search-txt{
+  width: 85%;
+  padding: 15px 20px;
+  border:none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.fas {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+}
+#more{
+  display: none;
+}
+botton{
+  background-color: white;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 30px;
+  padding: 5px;
+}
+
+
+
+h1{
+  font-size:50px;
+  color:white;
+  text-align:center;
+
+}
+
+h2,h3{
+  text-align:center;
+  color:white;
+
+}
+
+h4{
+  color:black;
+}
+
+p{
+  color:white;
+  font-size:150%;
+  text-align:center;
+}
+p.result-text{
+  color: red;
+  font-size: 80px;
+  font-family: 'Bitter', serif;
+  top: 60%;
+  left: 50%;
+  text-align: center;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  word-spacing: 10px;
+
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background-size:1700px 300px;
+}
+
+.header h1 {
+  font-size: 50px;
+  color:white;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border:5px solid white;
+  max-width: 300px;
+  margin:auto;
+  background-color:white;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.column {
+  float: left;
+  width: auto;
+  padding: 80px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column div {
+  block: inline
+}
+
+.card p{
+  color:black;
+}
+
+.border{
+  text-align:center;
+  opacity:0.6;
+  color:white;
+  background-color:white;
+  border: 10px solid black;
+  border-style: solid;
+  margin:120px 160px 90px 70px;
+
+}
+
+
+
+.border p,h2{
+  color:black;
+}
+
+
+mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+#sel{
+	width:200px;
+	height:50px;
+	font-size: 30px;
+	color: white;
+	background: #333;
+}
+
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  ul,li{
+      list-style: none;
+  }
+  .slider{
+      width: 1130px;
+      height: 400px;
+      margin: 50px auto;
+      position: relative;
+      overflow: hidden;
+  }
+  .slider_img{
+      width: 1130px;
+      height: 400px;
+  }
+  .slider li{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1130px;
+      height: 400px;
+  }
+  .slider li img{
+      width: 100%;
+      height: 100%;
+  }
+  .slider_btn{
+      text-align: center;
+  }
+  .slider_btn .prev{
+      background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/left_arrow.svg?v=2);
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      z-index: 100;
+      top: 50%;
+      margin-top: -26px;
+      left: 10px;
+      cursor: pointer;
+  }
+  .slider_btn .next{
+      background: url(https://static.zcool.cn/git_z/z/widget/slider/images/svg/right_arrow.svg?v=2);
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      z-index: 100;
+      top: 50%;
+      margin-top: -26px;
+      right: 10px;
+      cursor: pointer;
+  }
+  .xbtn{
+      position: absolute;
+      top: 93%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+  }
+  .dot{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border: 1px solid yellow;
+      border-radius: 50%;
+      margin: 0 20px ;
+      box-shadow: 0 0 5px black;
+      cursor: pointer;
+  }
+  .dot_color{
+      background-color: red;
+  }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Food Direct - Order online, home delivery fresh food</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="My Food Direct is a company that provides customers fresh food and agricultural products with home delivery services.">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="topnav">
+  <a href="home.html" target="_self" >Home</a>
+  <a href="products.html" target="_self">Products</a>
+
+
+  </div>
+</div>
+
+</head>
+<h1>My Food Direct</h1>
+
+<div class="search-box">
+  <input class="search-txt" type='text' name="" placeholder="What are you looking for?">
+  <a class="search-btn" href="#">
+  <i class="fas fa-search"></i>
+  </a>
+</div>
+<select id="sel" onchange="self.location.href=options[selectedIndex].value">
+	<option value="products.html">All Products</option>
+	<option value="vegetables.html">Vegetables</option>
+	<option value="fruits.html">Friuts</option>
+</select>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/carrot.jpg" alt="Local carrots" style="width:100%">
+      <h4>Carrots</h4>
+      <p class="price">$4.50 per kg</p>
+      <p>Carrots can be eaten raw as snacks, or cooked and used in savoury and some sweet dishes, such as carrot cake or muffins. They can be boiled, steamed, baked, roasted, barbecued, stir fried or microwaved.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    </div>
+    <div class ="column">
+      <div class="card">
+        <img src="images/cucumber.jpg" alt="fresh green cucumbers" style="width:100%">
+        <h4>Cucumber</h4>
+        <p class="price">$4.50 per kg</p>
+        <p>Cucumbers are a popular salad vegetable. While low in most nutrients cucumbers are a source of vitamin c and have a high water content. Apart from in salads, raw cucumber can also be sliced and used like crackers with dips, or in a cold soup, chopped, sauteed or juiced.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      </div>
+    <div class="column">
+      <div class="card">
+        <img src="images/cabbage.jpg" alt="fresh and local cabbage" style="width:100%">
+        <h4>Cabbage</h4>
+        <p class="price">$5.00 per kg</p>
+        <p>Cabbages are from the brassica family and are one of the oldest known vegetables.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/orange.jpg" alt="fresh and local oranges" style="width:100%">
+      <h4>Oranges</h4>
+      <p class="price">$3.50 per kg</p>
+      <p>Approx 4-6 medium oranges per 1kg - but actual quantity may vary. Delicious to eat and a great source of vitamin c.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    </div>
+    <div class ="column">
+      <div class="card">
+        <img src="images/banana.jpg" alt="fresh and local banana" style="width:100%">
+        <h4>Banana</h4>
+        <p class="price">$5.00 per kg</p>
+        <p>Approx 5-7 medium bananas per 1kg - but actual quantity may vary. Product of ecuador or mexico.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      </div>
+    <div class="column">
+      <div class="card">
+        <img src="images/apples.png" alt="fresh and local apples" style="width:100%">
+        <h4>Apples</h4>
+        <p class="price">$4.00 per kg</p>
+        <p>Fruit and veges that deserve to be tasted, not wasted, the odd bunch have their own unique shapes and looks and therefore each pack will be completely different.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+      </div>
+</div>
+
+<script src="javascript.js"></script>
+
+</head>
